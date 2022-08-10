@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu:wght@300&display=swap");
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: #e4e3e3;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #e4e3e3;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+}
+
+.logo {
+  font-family: "Courgette", cursive;
+}
+
+main {
+  display: flex;
+  margin-top: 5.25rem;
+  flex-wrap: nowrap;
+}
+
+.postList {
+  margin: 0.25rem;
+  flex: 2;
+}
+
+.shortInfo {
+  flex: 1;
+}
+
+.page {
+  background-color: white;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.fixedShortInfo {
+  position: fixed;
+  padding: 1rem;
+  margin: 0.25rem;
+  height: fit-content;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .postList {
+    width: 100vw;
+  }
+  .shortInfo {
+    display: none;
+  }
+}
+
+/* Create Post */
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  width: fit-content;
+  height: fit-content;
+}
+
+.modal_content {
+  background-color: white;
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: fit-content;
+  padding: 20px;
+  box-shadow: 0 0 20px grey;
+}
+
+.close {
+  font-size: large;
+  color: Black;
+  float: right;
+}
+
+.close:hover {
+  color: rgb(0, 107, 207);
+  cursor: pointer;
+}
